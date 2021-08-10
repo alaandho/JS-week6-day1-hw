@@ -1,4 +1,4 @@
-//codewars 1
+//codewars 1: Even or Odd
 //https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/javascript
 
 function even_or_odd(number){
@@ -12,7 +12,7 @@ console.log(even_or_odd())
 
 
 
-//codewars 2
+//codewars 2: Get the Middle Character
 //https://www.codewars.com/kata/56747fd5cb988479af000028
 
 function getMiddle(s){
@@ -60,17 +60,17 @@ console.log(findWords(dog_string, dog_names))
 /*
     Write a function that takes in an array and removes every value that's double is over 50.
 */
-//given_arr = [13, 22, 26, 40, 1, 10];
+given_arr = [13, 22, 26, 40, 1, 10];
 
 let replaceEvens = (arr) =>{
     let empty_r = [];
-    for(let i = 0; i < arr.length; i++){  //keeps looping until end of length of array
+    for(let i = 0; i < given_arr.length; i++){  //keeps looping until end of length of array
         if(arr[i]*2 < 50){
         empty_r.push(arr[i])
         }
-    }
+    } return empty_r
 };
-console.log(replaceEvens([13, 22, 26, 40, 1, 10]))
+console.log(replaceEvens(given_arr))
 
 
  // take in  x*2 < 50
