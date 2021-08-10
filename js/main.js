@@ -39,10 +39,10 @@ let dog_names = ["Max","HAS","PuRple","dog"];  //looping through list, loops thr
 let findWords = () =>{
     for(let i = 0; i <= dog_names.length; i++){
         if (dog_string.includes(dog_names[i])){
-            console.log(dog_names[i])
+            console.log("Matched " + dog_names[i])
             break
         }else{
-            console.log(`No Matches`)
+            console.log("No Matches")
         }
     }   
 };  
@@ -52,7 +52,7 @@ console.log(findWords(dog_string, dog_names))
 //if conditional in if statement is met, continues for loop until break
 //loops though dog_names
 // if dog_names is in str dog_string
-// if no match --> console.log (`No Matches`); 
+//if no match --> console.log No Matches
 
 
 
@@ -81,4 +81,18 @@ console.log(replaceEvens(given_arr))
 //Given arr == [13, 22, 26, 40, 1, 10]
 //Output arr == [13, 22, 1, 10]
 //Explanation: 13*2 < 50, 22*2 < 50, 26*2 > 50, etc. 
+
+//python solution:
+// def replaceBigs(arr):
+//     i = 0
+//     x = len(arr)
+//     while i < x:
+//         if arr[i] *2 > 50:
+//             del arr[i]
+//             x -= 1
+//         else:
+//             i += 1
+//     return arr
+// print(replaceBigs([13, 22, 26, 40, 1, 10]))
+
 
